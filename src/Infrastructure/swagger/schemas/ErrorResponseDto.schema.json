@@ -1,0 +1,33 @@
+{
+  "additionalProperties": false,
+  "description": "Represents the structure of an error response for HTTP endpoints.",
+  "properties": {
+    "message": {
+      "description": "Human-readable error message describing the issue.",
+      "examples": [
+        "Resource not found"
+      ],
+      "type": "string"
+    },
+    "stack": {
+      "description": "Optional stack trace for debugging purposes. This is typically available only in non-production environments.",
+      "examples": [
+        "Error: Not Found\n    at /app/src/index.ts:42:13"
+      ],
+      "type": "string"
+    },
+    "status": {
+      "default": 500,
+      "description": "HTTP status code for the response.",
+      "examples": [
+        404
+      ],
+      "type": "number"
+    }
+  },
+  "required": [
+    "status",
+    "message"
+  ],
+  "type": "object"
+}

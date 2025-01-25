@@ -1,0 +1,27 @@
+{
+  "additionalProperties": false,
+  "description": "Represents the structure of a generic message response.",
+  "properties": {
+    "message": {
+      "default": "api.nexus.dev",
+      "description": "Human-readable message for the response.",
+      "examples": [
+        "Welcome to the Nexus API"
+      ],
+      "type": "string"
+    },
+    "status": {
+      "default": 200,
+      "description": "HTTP status code for the response.",
+      "examples": [
+        200
+      ],
+      "type": "number"
+    }
+  },
+  "required": [
+    "status",
+    "message"
+  ],
+  "type": "object"
+}
