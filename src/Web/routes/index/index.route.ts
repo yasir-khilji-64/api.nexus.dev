@@ -58,6 +58,12 @@ class IndexRoute {
      *          application/json:
      *            schema:
      *              $ref: '#/components/schemas/HealthCheckResponseDto'
+     *            example:
+     *              status: 503
+     *              message: "Service Unavailable"
+     *              database: "disconnected"
+     *              timestamp: "2025-01-01T00:00:00Z"
+     *              upTime: 0
      *      500:
      *        description: Internal Server Error
      *        content:

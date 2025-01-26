@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { Service } from 'typedi';
 
-import { HealthCheckUseCase } from '../../../Application/use-cases/health-check/health-check.use-case.dto';
+import { HealthCheckUseCase } from '../../../Application/use-cases/health-check/health-check.use-case';
 import { HttpStatusCodes } from '../../../shared/http';
 import { Logger } from '../../../shared/utils/logger/logger';
 import { HealthCheckResponseDto } from '../../DTOs/index/health-check-response.dto';

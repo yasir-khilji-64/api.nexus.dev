@@ -38,6 +38,9 @@ class SchemaGenerator {
     this.settings = {
       path: this.filePattern,
       tsconfig: this.tsconfigFile,
+      expose: 'all',
+      jsDoc: 'extended',
+      topRef: true,
       type: '*',
       ..._additionalSettings,
     };

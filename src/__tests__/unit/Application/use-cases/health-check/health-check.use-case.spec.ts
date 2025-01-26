@@ -3,7 +3,7 @@ import Container from 'typedi';
 
 import { HealthCheckDto } from '../../../../../Application/DTOs/health-check/health-check.dto';
 import type { IDatabase } from '../../../../../Application/interfaces/database/database.interface';
-import { HealthCheckUseCase } from '../../../../../Application/use-cases/health-check/health-check.use-case.dto';
+import { HealthCheckUseCase } from '../../../../../Application/use-cases/health-check/health-check.use-case';
 
 describe('HealthCheckUseCase', () => {
   beforeEach(() => {

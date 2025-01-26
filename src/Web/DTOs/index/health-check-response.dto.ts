@@ -15,7 +15,7 @@ export type HealthCheckResponseDto = MessageResponseDto & {
    * - `unknown`: The database connection status is not determined.
    *
    * @example "connected"
-   * @default "disconnected"
+   * @default "connected"
    */
   database:
     | 'disconnected'

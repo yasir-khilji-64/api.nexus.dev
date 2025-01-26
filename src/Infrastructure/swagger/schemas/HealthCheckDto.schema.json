@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "database": {
+      "type": "string",
+      "enum": [
+        "disconnected",
+        "connected",
+        "connecting",
+        "disconnecting",
+        "uninitialized"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "upTime": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "database",
+    "timestamp",
+    "upTime"
+  ],
+  "additionalProperties": false
+}
