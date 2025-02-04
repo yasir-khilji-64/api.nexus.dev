@@ -1,0 +1,64 @@
+{
+  "name": "api.nexus.dev",
+  "version": "0.0.0",
+  "description": "Nexus Cloud - Share, Split, Simplify",
+  "main": "src/Infrastructure/http/main.ts",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "start": "ts-node src/Infrastructure/http/main.ts",
+    "start:dev": "nodemon src/Infrastructure/http/main.ts",
+    "start:prod": "node dist/Infrastructure/http/main.js",
+    "format": "prettier --check src/**/*.ts",
+    "format:write": "prettier --write src/**/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint --fix src/**/*.ts"
+  },
+  "keywords": [
+    "nexus-cloud",
+    "bill-split",
+    "expenses",
+    "payment-sharing",
+    "group-finance",
+    "collaborative-payments",
+    "cloud-finance"
+  ],
+  "author": "Yasir Hassan",
+  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasir-khilji-64/api.nexus.dev"
+  },
+  "homepage": "https://github.com/yasir-khilji-64/api.nexus.dev#readme",
+  "bugs": {
+    "url": "https://github.com/yasir-khilji-64/api.nexus.dev/issues"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "reflect-metadata": "^0.2.2",
+    "typedi": "^0.10.0",
+    "winston": "^3.17.0",
+    "zod": "^3.24.1"
+  }
+}
