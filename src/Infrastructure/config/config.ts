@@ -17,6 +17,10 @@ class Config {
         z.literal('production'),
       ])
       .default('development'),
+    MONGO_HOST: z.string(),
+    MONGO_USERNAME: z.string(),
+    MONGO_PASSWORD: z.string(),
+    MONGO_DATABASE: z.string(),
   });
   public env: z.infer<typeof Config.schema>;
 

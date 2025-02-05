@@ -14,6 +14,10 @@ class IndexRoute {
 
   private initializeRoutes(): void {
     this.router.get('/', this.indexController.index.bind(this.indexController));
+    this.router.get(
+      '/health-check',
+      this.indexController.healthCheck.bind(this.indexController),
+    );
   }
 
   public getRoutes(): Router {
